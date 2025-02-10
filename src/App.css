@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+ 
+#hero{
+  background-color:rgba(4, 201, 250, 0.26, 0.26);
+  background-image: url('https://th.bing.com/th/id/R.10b777f7e37f794190367f73fc6dd47f?rik=HDqStuxcAQ1RBg&riu=http%3a%2f%2fwww.budgetmaldives.com%2fwp-content%2fuploads%2f2020%2f05%2fJa-manafaru-sunrise-villa.jpg&ehk=j6GPWQnmRCaQVl6InTHo%2byNB54ycKdDjVp8Zm5fnNb0%3d&risl=&pid=ImgRaw&r=0');
+
+  background-position:cover;
+}
+
+.populararea1{
+  background-image:url('https://www.bankrate.com/2021/12/09101618/Can-you-Buy-a-Home-with-Cryptocurrency.jpeg');
+  /* background-size: cover; */
+
+}
+
+.populararea2{
+  background-image: url('https://static.vecteezy.com/system/resources/previews/022/903/424/large_2x/ai-generative-3d-modern-luxury-real-estate-house-for-sale-and-rent-luxury-property-concept-ai-generated-artwork-photo.jpg');
+  /* background-size: cover; */
+
+}
+
+.populararea3{
+  background-image: url('https://oracleoftime.com/wp-content/uploads/2019/08/Anantara-Resort.jpg');
+  /* background-size: cover; */
+}
+
+  /* https://th.bing.com/th/id/R.10b777f7e37f794190367f73fc6dd47f?rik=HDqStuxcAQ1RBg&riu=http%3a%2f%2fwww.budgetmaldives.com%2fwp-content%2fuploads%2f2020%2f05%2fJa-manafaru-sunrise-villa.jpg&ehk=j6GPWQnmRCaQVl6InTHo%2byNB54ycKdDjVp8Zm5fnNb0%3d&risl=&pid=ImgRaw&r=0'); */
+
+    /* https://th.bing.com/th/id/R.668b7fd1842094d041b174e74c1d5c4e?rik=MnmBtyvHSVLjLA&riu=http%3a%2f%2fwww.kuramathi.ie%2fwp-content%2fuploads%2f2016%2f04%2fsunset-water-villa-with-pool-01sunset-water-villa-with-pool-01-2000x750.jpg&ehk=XQl3koNNGHojMaENP7b%2bz7Qg7hUaIg8DNTRfNCrn5Hs%3d&risl=&pid=ImgRaw&r=0'); */
+
+
+
+  /* https://www.hotelswithprivatepool.com/Images/hotels-private-pool-haa-alif-atoll-ja-manafaru-maldives.jpg'); */
+  /* https://images.trvl-media.com/lodging/25000000/24080000/24071100/24071063/3cff87cc.jpg?impolicy=resizecrop&rw=455&ra=fit') */
+  /* https://www.bankrate.com/2021/12/09101618/Can-you-Buy-a-Home-with-Cryptocurrency.jpeg' */
+
+
+
+/* https://static.vecteezy.com/system/resources/previews/022/903/424/large_2x/ai-generative-3d-modern-luxury-real-estate-house-for-sale-and-rent-luxury-property-concept-ai-generated-artwork-photo.jpg */
+
+/* https://oracleoftime.com/wp-content/uploads/2019/08/Anantara-Resort.jpg */
+
+/* https://unihotel.org/media/upload/hotel_photo/173a27f7-f450-4aa6-98cd-5449444adf71.jpg */
+/* https://www.neoscapesmaldives.com/wp-content/uploads/351bbf9b32ea226d4294d111dad38ed0.jpg */
+/* https://unihotel.org/media/upload/hotel_photo/173a27f7-f450-4aa6-98cd-5449444adf71.jpg */
+  /* https://maldives-magazine.com/pictures/anantara-overwater-pool-villa.jpg'); */
