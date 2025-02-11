@@ -8,7 +8,7 @@ import { useDarkmode } from '../components/DarkmodeContext'
 
 const Properties = () => {
 
-  const { darkmode, toggleDarkmode } = useDarkmode();
+  const { darkMode, toggleDarkMode } = useDarkmode();
 
   useEffect(() => {
     Aos.init({
@@ -21,11 +21,11 @@ const Properties = () => {
 
 
   return (
-    <div className={`${darkmode ? 'dark bg-black' : 'light bg-transparent'}`}>
+    <div className={`${darkMode ? 'dark bg-black text-white' : 'light bg-transparent'}`}>
       <section id='properties' className='m-auto lg:px-10 px-6 py-20 w-full flex flex-col items-start justify-center gap-10'>
         <div className='flex flex-col justify-center        items-start gap-4'>
-          <h1 data-aos="zoom-in" className='text-red-500 dark:text-white'>PROPERTIES</h1>
-          <h1 data-aos="zoom-in" className='text-black text-4xl font-semibold dark:text-white'>Explore the latest</h1>
+          <h1 data-aos="zoom-in" className='text-red-500 dark:text-white text-xl'>PROPERTIES</h1>
+          <h1 data-aos="zoom-in" className='text-4xl font-semibold dark:text-white'>Explore the latest</h1>
         </div>
         <div id='gridbox' className='grid w-full lg:grid-cols-3 grid-cols-1 justify-center items-center gap-10'>
           {

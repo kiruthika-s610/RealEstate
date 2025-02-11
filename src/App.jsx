@@ -6,6 +6,7 @@ import Properties from './sections/Properties'
 import Services from './sections/Services'
 import Clients from './sections/Clients'
 import Contact from './sections/Contact'
+import Header from './components/Header'
 import Footer from './components/Footer'
 import Populararea from './sections/Populararea'
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
     <DarkmodeProvider>
+    <Header/>
     <Hero/>
     <About/>
     <Populararea/>

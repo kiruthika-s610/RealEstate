@@ -8,6 +8,13 @@ const DarkmodeProvider = ({children}) => {
 
     const toggleDarkMode = ()=>{
         setDartMode(!darkMode);
+        console.log("dark", document.getElementsByClassName("dark"))
+        // if(!darkMode){
+        //     document.body.classList.add("dark")
+        // } else {
+        //     document.body.classList.remove("dark")
+
+        // }
     }
   return (
     <DarkmodeContext.Provider value={{darkMode, toggleDarkMode}}>
