@@ -22,8 +22,8 @@ const About = () => {
         <img data-aos="zoom-in" src="https://unihotel.org/media/upload/hotel_photo/173a27f7-f450-4aa6-98cd-5449444adf71.jpg" alt="about Image" className='rounded-2xl  w-full lg:h-[650px] ' />
       </div>
       <div className='flex flex-col justify-center items-start gap-8'>
-        <h1 data-aos='zoom-in' className='text-red-500 dark:text-white '>WHO WE ARE</h1>
-        <h1 data-aos='zoom-in' data-aos-delay="200" className='text-black text-[40px] font-semibold leading-10 dark:text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+        <h1 data-aos='zoom-in' className={`${darkMode ? 'text-yellow-200':'text-red-500'}`}>WHO WE ARE</h1>
+        <h1 data-aos='zoom-in' data-aos-delay="200" className={`${darkMode ? 'text-white':'text-black'} text-[40px] font-semibold leading-10 dark:text-white`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
         <div data-aos='zoom-in' data-aos-delay="200" className='text-xl  dark:text-white text-justify' >
           Aliquid expedita iste neque, ullam suscipit molestias reiciendis unde error, facere sed sequi. Quibusdam natus voluptate quod in corporis amet labore ab?
         </div>
