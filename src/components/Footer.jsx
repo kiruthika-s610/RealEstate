@@ -1,36 +1,36 @@
 import React from 'react'
 import { FaArrowUp, FaSun, FaMoon, FaMobile, FaFax } from 'react-icons/fa'
 import { useDarkmode } from './DarkmodeContext'
-import { FaFacebookF, FaInstagram, FaYoutube,FaTwitter, FaBuilding } from 'react-icons/fa'
-import {Link} from 'react-scroll'
-import {IoMdMail} from 'react-icons/io'
+import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaBuilding } from 'react-icons/fa'
+import { Link } from 'react-scroll'
+import { IoMdMail } from 'react-icons/io'
 
 
 const Footer = () => {
-  const {darkMode, toggleDarkMode} = useDarkmode();
+  const { darkMode, toggleDarkMode } = useDarkmode();
 
   return (
     <div>
-      <footer id="contact us"  className={`${darkMode ? 'dark bg-black' : 'light bg-gray-800'} w-full m-auto lg:px-20 px-10 py-20 grid  lg:grid-cols-3 grid-cols-1 justify-center items-start lg:gap-20 gap-10`} >
+      <footer id="contact us" className={`${darkMode ? 'dark bg-black' : 'light bg-gray-800'} w-full m-auto lg:px-20 px-10 py-20 grid  lg:grid-cols-3 grid-cols-1 justify-center items-start lg:gap-20 gap-10`} >
         <div className='flex flex-col justify-center items-start gap-6'>
           <h1 className='text-white text-2xl font-semibold'>About Us</h1>
           <p className='text-slate-200 text-justify text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, fuga. Aut placeat modi minima in quod aspernatur ipsum quo minus.</p>
           <div id='social-icons' className='flex justify-center gap-3 items-center'>
             <div className='p-3 rounded-xl bg-white hover:bg-sky-300 hover:text-white cursor-pointer transform hover:scale-110 transition-transform duration-300'>
-              <FaFacebookF className='size-4'/>
+              <FaFacebookF className='size-4' />
             </div>
             <div className='p-3 rounded-xl bg-white hover:bg-red-500 hover:text-white cursor-pointer transform hover:scale-110 transition-transform duration-300'>
-              <FaInstagram className='size-4'/>
+              <FaInstagram className='size-4' />
             </div>
             <div className='p-3 rounded-xl bg-white hover:bg-sky-300 hover:text-white cursor-pointer transform hover:scale-110 transition-transform duration-300'>
-              <FaTwitter className='size-4'/>
+              <FaTwitter className='size-4' />
             </div>
             <div className='p-3 rounded-xl bg-white hover:bg-red-600 hover:text-white cursor-pointer transform hover:scale-110 transition-transform duration-300'>
-              <FaYoutube className='size-4'/>
-            </div>        
+              <FaYoutube className='size-4' />
+            </div>
           </div>
           <h1 className='text-white mt-8'>Copyrights Uthira Realtors, All Rights Reserved.</h1>
-        </div> 
+        </div>
         <div className='flex flex-col justify-center items-start gap-5'>
           <h1 className='text-white text-2xl font-semibold '>Contact Us </h1>
           <div className='flex justify-center items-center gap-3 text-white '>
@@ -50,7 +50,7 @@ const Footer = () => {
             <p>demo@gmail.com</p>
           </div>
         </div>
-        <div className='flex flex-col justify-start items-center gap-5 text-white'>
+        <div className='flex flex-col justify-center items-start gap-5 text-white'>
           <h1 className='font-semibold text-2xl '>Latest Properties</h1>
           <div className='flex justify-center items-center gap-3'>
             <img src='https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' className='w-[120px] rounded-lg tranform hover:scale-110 
@@ -68,17 +68,16 @@ const Footer = () => {
               <p className='text-stone-400'> 80 Lakhs</p>
             </div>
           </div>
-
         </div>
       </footer>
       <div id='icon-box' className='bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed  lg:bottom-12 bottom-6 right-6 '>
         <Link to='hero' spy={true} smooth={true}>
-        <FaArrowUp className='text-white'/>
+          <FaArrowUp className='text-white' />
         </Link>
       </div>
       <div>
-        <button onClick={toggleDarkMode} className='flex item-center fixed p-4 rounded-full bg-orange-400 lg:top-52 right-6 top-6 '>
-          {darkMode ? <FaMoon/> : <FaSun/>}
+        <button onClick={toggleDarkMode} className='flex item-center fixed p-4 rounded-full bg-orange-400 lg:top-52 right-6 top-26 '>
+          {darkMode ? <FaMoon /> : <FaSun />}
         </button>
       </div>
     </div>

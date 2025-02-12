@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'
 
 const Services = () => {
 
-  const { darkMode, toggleDarkMode } = useDarkmode();
+  const { darkMode } = useDarkmode();
 
   useEffect(() => {
     Aos.init({
@@ -36,11 +36,7 @@ const Services = () => {
             ))
           }
         </div>
-
       </section>
-
-
-
     </div>
   )
 }

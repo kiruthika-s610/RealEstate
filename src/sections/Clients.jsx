@@ -9,10 +9,9 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { client } from '../components/export'
 
-
-
 const Clients = () => {
-  const { darkMode, toggleDarkMode } = useDarkmode();
+  const { darkMode } = useDarkmode();
+
   useEffect(() => {
     Aos.init({
       offset: 100,
@@ -21,6 +20,7 @@ const Clients = () => {
       delay: 200
     })
   }, [])
+
   return (
     <div>
       <div className={`${darkMode ? 'dark bg-gray-500 text-white ' : 'light bg-transparent'}`}>
@@ -37,8 +37,7 @@ const Clients = () => {
                 clickable: true,
               }}
               modules={[Pagination]}
-              className="mySwiper"
-            >
+              className="mySwiper" >
               {client.map((item, index) => (
                 <SwiperSlide key={index} className='rounded-xl w-full mb-10'>
                   <div className='text-gray-700 h-fit'>
@@ -52,16 +51,13 @@ const Clients = () => {
                           <p className='text-sm text-stone-550'>{item.text}</p>
                         </div>
                       </div>
-
                       <p className='mt-3 text-sm'>{item.feedback}</p>
-
                       <div className='flex gap-2 w-fit px-20 text-orange-400 justify-center'>
                         <FaStar /><FaStar /> <FaStar /><FaStar /><FaStar />
                       </div>
                     </section>
                   </div>
                 </SwiperSlide>
-
               ))}
             </Swiper>
           </div>
@@ -86,10 +82,8 @@ const Clients = () => {
               </div>
             ))}
           </div>
-
         </section>
       </div>
-
     </div>
   )
 }

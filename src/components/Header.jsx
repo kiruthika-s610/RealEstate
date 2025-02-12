@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import { FaXmark, FaBars } from 'react-icons/fa6'
-import { DarkmodeProvider, useDarkmode } from './DarkmodeContext'
+import { useDarkmode } from './DarkmodeContext'
 import { FaPhoneAlt, FaUserCircle } from 'react-icons/fa'
-import Logo from '../logo'
 
 const Header = () => {
-  const { darkMode, toggleDarkMode } = useDarkmode();
+  const { darkMode } = useDarkmode();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -32,10 +31,10 @@ const Header = () => {
           </Link>
         ))}
       </ul>
-      <div className="flex justify-center items-center lg:hidden" onClick={toggleMenu}>
+      <div className={`flex justify-center items-center lg:hidden ${darkMode ? 'text-stone-200' : 'text-gray-700'}`} onClick={toggleMenu}>
         <div>
-          {isMenuOpen ? <FaXmark className='text-gray-700 text-xl cursor-pointer ' />
-            : <FaBars className='text-gray-700 text-xl cursor-pointer ' />}
+          {isMenuOpen ? <FaXmark onClick={closeMenu} className=' text-xl cursor-pointer ' />
+            : <FaBars className=' text-xl cursor-pointer ' />}
         </div>
       </div>
       <div>
@@ -51,11 +50,9 @@ const Header = () => {
         <div className='flex justify-center items-center lg:gap-3 gap-1 text-m pt-1 lg:text-[16px]'>
           <FaPhoneAlt className='size-4 h-fit flex  text-red-600' />
           <p className='h-fit'>+91 12345 67890</p>
-          <FaUserCircle className='size-5 text-stone-500'/>
+          <FaUserCircle className='size-5 text-stone-400' />
         </div>
-      
       </div>
-
     </nav>
   )
 }
