@@ -1,33 +1,62 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
-import {FaXmark, FaBars} from 'react-icons/fa6'
+import { FaXmark, FaBars } from 'react-icons/fa6'
 import { DarkmodeProvider, useDarkmode } from './DarkmodeContext'
 import { FaPhoneAlt, FaUserCircle } from 'react-icons/fa'
 import Logo from '../logo'
 
 const Header = () => {
-  const { darkMode, toggleDarkMode} = useDarkmode();
+  const { darkMode, toggleDarkMode } = useDarkmode();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () =>{
+  const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   }
-  const closeMenu = ()=>{
+  const closeMenu = () => {
     setIsMenuOpen(false)
   }
   const navItems = [
-    { link : 'Home', path: 'home' },
-    { link : 'About', path: 'about' },
-    { link : 'Properties', path: 'properties' },
-    { link : 'Testimonials', path: 'testimonials' },
-    { link : 'Contact', path: 'contact' },
+    { link: 'Hero', path: 'hero' },
+    { link: 'About', path: 'about' },
+    { link: 'Properties', path: 'properties' },
+    { link: 'Services', path: 'services' },
+    { link: 'Contact Us', path: 'contact us' },
   ]
 
   return (
-    <nav className={`${darkMode ? 'dark bg-black' : 'light bg-stone-50'} flex justify-center gap-4 lg:px-20 px-4 py-4 sticky top-0 z-30`}>
-      <Logo/>
-      <div id='logo' className='text-blue-400  dark:text-amber-100 text-3xl font-semibold'>Uthira Realtors</div>
+    < nav className={`${darkMode ? 'dark bg-gray-700 text-stone-200 ' : 'light bg-stone-50 text-blue-400 '} flex justify-between gap-4 lg:px-20 px-4 py-4 sticky top-0 z-30`}>
+      <div id='logo' className=' dark:text-amber-100 lg:text-4xl text-3xl font-semibold'>Uthira Realtors</div>
+      <ul className={`lg:flex hidden justify-center items-center gap-8 ${darkMode ? 'text-stone-100' : 'text-stone-600'} `}>
+        {navItems.map(({ link, path }) => (
+          <Link key={path} to={path} spy={true} offset={-100} smooth={true} className='text-[15px] uppercase font-semibold cursor-pointer px-3 py-2 rounded-lg hover:bg-red-400  '>
+            {link}
+          </Link>
+        ))}
+      </ul>
+      <div className="flex justify-center items-center lg:hidden" onClick={toggleMenu}>
+        <div>
+          {isMenuOpen ? <FaXmark className='text-gray-700 text-xl cursor-pointer ' />
+            : <FaBars className='text-gray-700 text-xl cursor-pointer ' />}
+        </div>
+      </div>
+      <div>
+        <div className={`w-full h-fit  bg-slate-800 p-4 absolute top-[80px] left-0 ${isMenuOpen ? 'flex' : 'hidden'} `}>
+          <ul className='flex flex-col justify-center items-center gap-2 w-full'>
+            {navItems.map(({ link, path }) => (
+              <Link key={path} to={path} spy={true} offset={-100} smooth={true} className='text-white uppercase font-semibold hover:bg-red-400 w-full text-center cursor-pointer'>
+                {link}
+              </Link>
+            ))}
+          </ul>
+        </div>
+        <div className='flex justify-center items-center lg:gap-3 gap-1 text-m pt-1 lg:text-[16px]'>
+          <FaPhoneAlt className='size-4 h-fit flex  text-red-600' />
+          <p className='h-fit'>+91 12345 67890</p>
+          <FaUserCircle className='size-5 text-stone-500'/>
+        </div>
+      
+      </div>
 
-      </nav>
+    </nav>
   )
 }
 

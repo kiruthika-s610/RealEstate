@@ -21,7 +21,7 @@ const Populararea = () => {
         <div id='top' className='w-full grid lg:grid-cols-6 grid-cols-1 justify-center items-center gap-8'>
           <div>
             <h1 data-aos="zoom-in" className='dark:text-white text-orange-500 text-2xl '>POPULAR AREAS</h1>
-            <h1 data-aos="zoom-in" className=' text-[40px] font-semibold leading-15 mt-4 dark:text-white'>Explore most popular areas</h1>
+            <h1 data-aos="zoom-in" className=' text-[25px]  leading-15 mt-4 dark:text-white'>Explore most popular areas</h1>
           </div>
           <div className='grid lg:grid-cols-3 col-span-5 grid-cols-1 justify-center items-center gap-6'>
           <div className='populararea1 h-[400px] bg-cover bg-center rounded-xl'  data-aos="slide-left" data-aos-delay="400 ">

@@ -28,7 +28,7 @@ const About = () => {
           <div data-aos='zoom-in' data-aos-delay="200"  className='text-xl  dark:text-white text-justify' >
           Aliquid expedita iste neque, ullam suscipit molestias reiciendis unde error, facere sed sequi. Quibusdam natus voluptate quod in corporis amet labore ab?
           </div>
-          <button className='bg-red-800 dark:bg-red-700  hover:bg-red-600 text-white dark:hover:bg-white dark:hover:text-black font-semibold rounded-xl p-3 cursor-pointer transform hover:scale-110 transition-transform-duration-500'>Read more</button>
+          <button className='bg-red-800 dark:bg-red-700  hover:bg-red-600 transition-transform duration-300 text-white dark:hover:bg-white dark:hover:text-black font-semibold rounded-xl p-3 cursor-pointer transform hover:scale-110 transition-transform-duration-500'>Read more</button>
       </div>
     </section>
   )

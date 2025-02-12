@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div>
-      <footer className={`${darkMode ? 'dark bg-black' : 'light bg-gray-800'} w-full m-auto lg:px-20 px-10 py-20 grid  lg:grid-cols-3 grid-cols-1 justify-center items-start lg:gap-20 gap-10`} >
+      <footer id="contact us"  className={`${darkMode ? 'dark bg-black' : 'light bg-gray-800'} w-full m-auto lg:px-20 px-10 py-20 grid  lg:grid-cols-3 grid-cols-1 justify-center items-start lg:gap-20 gap-10`} >
         <div className='flex flex-col justify-center items-start gap-6'>
           <h1 className='text-white text-2xl font-semibold'>About Us</h1>
           <p className='text-slate-200 text-justify text-sm'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, fuga. Aut placeat modi minima in quod aspernatur ipsum quo minus.</p>
@@ -50,7 +50,7 @@ const Footer = () => {
             <p>demo@gmail.com</p>
           </div>
         </div>
-        <div className='flex flex-col justify-center items-center gap-5 text-white'>
+        <div className='flex flex-col justify-start items-center gap-5 text-white'>
           <h1 className='font-semibold text-2xl '>Latest Properties</h1>
           <div className='flex justify-center items-center gap-3'>
             <img src='https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' className='w-[120px] rounded-lg tranform hover:scale-110 

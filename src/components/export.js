@@ -106,6 +106,48 @@ export const property = [
 
 ];
 
+export const client = [
+
+{
+    image: "https://www.mawdsleigh.com/wp-content/uploads/2017/04/man-smiling-colour.jpg",
+    name: "Hari",
+    text: "Good Team",
+    feedback: "The Uthira Realtors team did an outstanding job helping me to buy my first house with best price. "
+},
+{
+    image: "https://img.freepik.com/premium-photo/concentrated-male-indian-student-studying-hard-with-classroom_191555-10463.jpg",
+    name: "Arya",
+    text: "Excellent Team",
+    feedback: "The Uthira Realtors team did an outstanding job helping me to buy my first house with best price. "
+},
+{
+    image: "https://live.staticflickr.com/4227/34848098905_ec3724149f_b.jpg",
+    name: "Pooja",
+    text: "Excellent Team",
+    feedback: "The Uthira Realtors team did an outstanding job helping me to buy my first house with best price. "
+},
+{
+    image: "https://graymodelsandtalent.com/wp-content/uploads/2022/04/IMG_1434.JPG.jpg",
+    name: "Priya",
+    text: "Excellent Team",
+    feedback: "The Uthira Realtors team did an outstanding job helping me to buy my first house with best price. "
+},
+{
+    image: "https://img.freepik.com/premium-photo/elegant-asian-woman-smiling-background_519183-4413.jpg",
+    name: "Ana",
+    text: "Excellent Team",
+    feedback: "The Uthira Realtors team did an outstanding job helping me to buy my first house with best price. "
+},
+{
+    image: "https://www.curlcentric.com/wp-content/uploads/2021/05/Should-You-Wash-Your-Hair-Before-a-Haircut-960x640.jpeg",
+    name: "Riya",
+    text: "Excellent Team",
+    feedback: "The Uthira Realtors team did an outstanding job helping me to buy my first house with best price. "
+}
+
+];
+
+
 export const service = [
     {
         icon:MdNoteAlt,
