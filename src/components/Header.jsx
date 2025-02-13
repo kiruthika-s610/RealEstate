@@ -50,7 +50,7 @@ const Header = () => {
         <div className='flex justify-center items-center lg:gap-3 gap-1 text-m pt-1 lg:text-[16px]'>
           <FaPhoneAlt className='size-4 h-fit flex  text-red-600' />
           <p className='h-fit'>+91 12345 67890</p>
-          <FaUserCircle className='size-5 text-stone-400' />
+          <FaUserCircle className='size-5 text-red-400' />
         </div>
       </div>
     </nav>

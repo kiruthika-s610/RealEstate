@@ -25,12 +25,12 @@ const Properties = () => {
       <section id='properties' className='m-auto lg:px-10 px-6 py-20 w-full flex flex-col items-start justify-center gap-10'>
         <div className='flex flex-col justify-center        items-start gap-4'>
           <h1 data-aos="zoom-in" className='text-red-500 dark:text-white text-xl'>PROPERTIES</h1>
-          <h1 data-aos="zoom-in" className='text-4xl font-semibold dark:text-white'>Explore the latest</h1>
+          <h1 data-aos="zoom-in" className='text-4xl font-semibold '>Explore the latest</h1>
         </div>
         <div id='gridbox' className='grid w-full lg:grid-cols-3 grid-cols-1 justify-center items-center gap-10'>
           {
             property.map((item, index) => (
-              <div data-aos="zoom-in" data-aos-delay="200" key={index} className='bg-white dark:bg-gray-800 rounded-xl w-full'>
+              <div data-aos="zoom-in" data-aos-delay="200" key={index} className='bg-white dark:bg-gray-800 rounded-xl w-full '>
                 <div id='imagebox' className='bg-cover bg-center rounded-xl h-[350px] p-2 flex flex-col justify-between items-end ' style={{ backgroundImage: `url(${item.images})` }}>
                   <div id='top' className='flex justify-between items-end w-full '>
                     <div><button type='button' className='px-3 py-1 opacity-60 bg-red-600 text-[13px] hover:bg-white hover:text-black text-white rounded-full' >Featured</button></div>
