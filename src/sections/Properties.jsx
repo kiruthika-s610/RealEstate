@@ -60,19 +60,19 @@ const Properties = () => {
                   <h1 className='text-2xl m-1 text-orange-600 font-bold dark:text-white'>
                     {item.price}
                   </h1>
-                  <p className='dark:text-white m-1 mb-2.5'>{item.about}</p>
+                  <p className='text-black m-1 mb-2.5'>{item.about}</p>
                   <div id='icons' className='flex  items-start gap-5 m-1'>
                     <div className='flex justify-center items-start gap-2' >
                       <FaBed className='size-5 text-red-400' />
-                      <h1 className='dark:text-white'>{item.bed}</h1>
+                      <h1 className='text-black'>{item.bed}</h1>
                     </div>
                     <div className='flex justify-center items-start gap-2' >
                       <FaBath className='size-5 text-red-300' />
-                      <h1 className='dark:text-white'>{item.bath}</h1>
+                      <h1 className='text-black'>{item.bath}</h1>
                     </div>
                     <div className='flex justify-center items-start gap-2' >
                       <MdDashboard className='size-5 text-stone-400' />
-                      <h1 className='dark:text-white'>{item.area}</h1>
+                      <h1 className='text-black'>{item.area}</h1>
                     </div>
                   </div>
                   <div className='w-full h-[1px] bg-gray-200 mt-8'></div>
