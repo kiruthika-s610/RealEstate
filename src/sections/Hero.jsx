@@ -19,8 +19,8 @@ const Hero = () => {
   return (
     <>
       <div className={`${darkMode ? ' bg-black' : ' bg-white'}`}>
-        <section id='hero' className='w-[95%] h-[600px] m-auto bg-cover bg-center items-end  rounded-xl flex  flex-col lg:px-28 pr-5 px-10 pl-40 gap-7 z-20 '>
-          <h1  className="text-6xl text-white font-semibold   pt-20 lg:leading-[90px] leading-[70px] mb-12">Find your new Home </h1>
+        <section id='hero' className='w-[100%] h-[600px] m-auto bg-cover justify-center bg-center items-end  rounded-xl flex  flex-col lg:px-20 pr-1 px-5 pl-50 gap-7 z-20 '>
+          <h1  className="text-5xl lg:text-6xl text-white font-semibold   pt-25 lg:leading-[90px] leading-[70px] mb-12">Find your new Home </h1>
           <div data-aos="zoom-in" className='text-zinc-100 lg:block hidden items-end text-xl lg:pl-[65%] pl-[15%]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
         </section>
       </div>
