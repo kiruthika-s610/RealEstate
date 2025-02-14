@@ -21,7 +21,7 @@ const Hero = () => {
       <div className={`${darkMode ? 'dark bg-black' : 'light bg-white'}`}>
         <section id='hero' className='w-[95%] h-[600px] m-auto bg-cover bg-center items-end  rounded-xl flex  flex-col lg:px-28 pr-5 px-10 pl-40 gap-7 z-20 '>
           <h1  className="text-6xl text-white font-semibold   pt-20 lg:leading-[90px] leading-[70px] mb-12">Find your new Home </h1>
-          <div data-aos="zoom-in" className='text-zinc-100 items-end text-xl lg:pl-[65%] pl-[15%]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+          <div data-aos="zoom-in" className='text-zinc-100 lg:block hidden items-end text-xl lg:pl-[65%] pl-[15%]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
         </section>
       </div>
       <div className={`${darkMode ? 'dark bg-black' : 'light bg-transparent'} z-10`}>

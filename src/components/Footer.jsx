@@ -70,13 +70,13 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div id='icon-box' className='bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed  lg:bottom-12 bottom-6 right-6 '>
+      <div id='icon-box' className='bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed  lg:bottom-12 bottom-6 right-13 '>
         <Link to='hero' spy={true} smooth={true}>
           <FaArrowUp className='text-white' />
         </Link>
       </div>
       <div>
-        <button onClick={toggleDarkMode} className='flex item-center fixed p-4 rounded-full bg-orange-400 lg:top-52 right-6 top-26 '>
+        <button onClick={toggleDarkMode} className='flex item-center fixed p-4 rounded-full bg-orange-400 lg:top-52 right-13 top-26 '>
           {darkMode ? <FaMoon /> : <FaSun />}
         </button>
       </div>

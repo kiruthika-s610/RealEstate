@@ -24,12 +24,12 @@ const Clients = () => {
   return (
     <div>
       <div className={`${darkMode ? 'dark bg-gray-500 text-white ' : 'light bg-transparent text-black'}`}>
-        <section className='lg:w-[95%] w-full h-fit m-auto bg-cover bg-center rounded-xl flex flex-col items-start p-20 gap-20'>
+        <section className='lg:w-[95%] w-full h-fit m-auto bg-cover bg-center rounded-xl flex flex-col items-start lg:p-20 p-2 gap-20'>
           <div className='flex flex-col justify-center items-start gap-4'>
             <h1 data-aos="zoom-in" className={` ${darkMode ? 'text-yellow-300' : 'text-red-500'}`}>OUR CLIENTS</h1>
-            <h1 data-aos="slide-up" className=' text-[40px] font-semibold leading-10'>Our clients saying about us</h1>
+            <h1 data-aos="slide-up" className=' text-[40px] font-semibold leading-12 justify-center'>Our clients saying about us</h1>
           </div>
-          <div id='client-box' className='w-[100%] lg:flex hidden h-fit p-10 '>
+          <div id='client-box' className='lg:w-[100%] w-fit justify-center items-center lg:flex hidden h-fit lg:p-10 p-0'>
             <Swiper
               slidesPerView={2}
               spaceBetween={30}
@@ -39,7 +39,7 @@ const Clients = () => {
               modules={[Pagination]}
               className="mySwiper" >
               {client.map((item, index) => (
-                <SwiperSlide key={index} className='rounded-xl w-full mb-12 shadow-2xl'>
+                <SwiperSlide key={index} className='rounded-xl lg:w-full justify-center w-[50px] mb-12 shadow-2xl'>
                   <div className='text-gray-700 h-fit'>
                     <section className='m-auto justify-center flex flex-col gap-3  items-center p-10 ' >
                       <div className=' flex '>
