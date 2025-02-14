@@ -25,7 +25,7 @@ const Hero = () => {
         </section>
       </div>
       <div className={`${darkMode ? 'dark bg-black' : 'light bg-transparent'} z-10`}>
-        <div data-aos="zoom-in" id='form' className={`${darkMode ? 'dark bg-gray-800 text-white' : 'light bg-white'} lg:w-[70%] w-full m-auto justify-center items-center flex gap-20 p-3 -mt-14 rounded-xl `}>
+        <div data-aos="zoom-in" id='form' className={`${darkMode ? 'dark bg-gray-800 text-white' : 'light bg-white text-black'} lg:w-[70%] w-full m-auto justify-center items-center flex gap-20 p-3 -mt-14 rounded-xl `}>
           Location  <p className='bg-gray-100 p-2 px-10 rounded-xl text-cyan-600 justify-center items-center'> Coimbatore</p>
         </div>
       </div>

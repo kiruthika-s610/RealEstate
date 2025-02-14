@@ -33,12 +33,12 @@ const Header = () => {
       </ul>
       <div className={`flex justify-center items-center lg:hidden ${darkMode ? 'text-stone-200' : 'text-gray-700'}`} onClick={toggleMenu}>
         <div>
-          {isMenuOpen ? <FaXmark onClick={closeMenu} className=' text-xl cursor-pointer ' />
-            : <FaBars className=' text-xl cursor-pointer ' />}
+          {isMenuOpen ? <FaXmark onClick={closeMenu} className='lg:hidden text-xl cursor-pointer ' />
+            : <FaBars className='lg:hidden text-xl cursor-pointer ' />}
         </div>
       </div>
       <div>
-        <div className={`w-full h-fit  bg-slate-800 p-4 absolute top-[80px] left-0 ${isMenuOpen ? 'flex' : 'hidden'} `}>
+        <div className={`w-full h-fit lg:hidden  bg-slate-800 p-4 absolute top-[80px] left-0 ${isMenuOpen ? 'flex' : 'hidden'} `}>
           <ul className='flex flex-col justify-center items-center gap-2 w-full'>
             {navItems.map(({ link, path }) => (
               <Link key={path} to={path} spy={true} offset={-100} smooth={true} className='text-white uppercase font-semibold hover:bg-red-400 w-full text-center cursor-pointer'>

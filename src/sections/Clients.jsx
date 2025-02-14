@@ -23,7 +23,7 @@ const Clients = () => {
 
   return (
     <div>
-      <div className={`${darkMode ? 'dark bg-gray-500 text-white ' : 'light bg-transparent'}`}>
+      <div className={`${darkMode ? 'dark bg-gray-500 text-white ' : 'light bg-transparent text-black'}`}>
         <section className='lg:w-[95%] w-full h-fit m-auto bg-cover bg-center rounded-xl flex flex-col items-start p-20 gap-20'>
           <div className='flex flex-col justify-center items-start gap-4'>
             <h1 data-aos="zoom-in" className={` ${darkMode ? 'text-yellow-300' : 'text-red-500'}`}>OUR CLIENTS</h1>
@@ -39,7 +39,7 @@ const Clients = () => {
               modules={[Pagination]}
               className="mySwiper" >
               {client.map((item, index) => (
-                <SwiperSlide key={index} className='rounded-xl w-full mb-10'>
+                <SwiperSlide key={index} className='rounded-xl w-full mb-12 shadow-2xl'>
                   <div className='text-gray-700 h-fit'>
                     <section className='m-auto justify-center flex flex-col gap-3  items-center p-10 ' >
                       <div className=' flex '>

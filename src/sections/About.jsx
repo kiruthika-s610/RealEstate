@@ -24,10 +24,10 @@ const About = () => {
       <div className='flex flex-col justify-center items-start gap-8'>
         <h1 data-aos='zoom-in' className={`${darkMode ? 'text-yellow-200':'text-red-500'}`}>WHO WE ARE</h1>
         <h1 data-aos='zoom-in' data-aos-delay="200" className={`${darkMode ? 'text-white':'text-black'} text-[40px] font-semibold leading-10 dark:text-white`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
-        <div data-aos='zoom-in' data-aos-delay="200" className='text-xl  dark:text-white text-justify' >
+        <div data-aos='zoom-in' data-aos-delay="200" className={`text-xl text-justify ${darkMode ? 'text-white' : 'text-black'}`} >
           Aliquid expedita iste neque, ullam suscipit molestias reiciendis unde error, facere sed sequi. Quibusdam natus voluptate quod in corporis amet labore ab?
         </div>
-        <button className='bg-red-800 dark:bg-red-700  hover:bg-red-600 transition-transform duration-300 text-white dark:hover:bg-white dark:hover:text-black font-semibold rounded-xl p-3 cursor-pointer transform hover:scale-110 transition-transform-duration-500'>Read more</button>
+        <button className='bg-red-700  hover:bg-red-600 transition-transform duration-300 text-white font-semibold rounded-xl p-3 cursor-pointer  hover:scale-110 transition-transform-duration-500'>Read more</button>
       </div>
     </section>
   )
