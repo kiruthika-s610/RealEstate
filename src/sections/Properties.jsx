@@ -21,7 +21,7 @@ const Properties = () => {
 
 
   return (
-    <div className={`${darkMode ? 'dark bg-black text-white' : 'light bg-transparent text-black'}`}>
+    <div className={`${darkMode ? ' bg-black text-white' : ' bg-transparent text-black'}`}>
       <section id='properties' className='m-auto lg:px-10 px-6 py-20 w-full flex flex-col items-start justify-center gap-10'>
         <div className='flex flex-col justify-center        items-start gap-4'>
           <h1 data-aos="zoom-in" className='text-red-500 text-xl'>PROPERTIES</h1>

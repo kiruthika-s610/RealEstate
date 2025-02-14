@@ -11,7 +11,7 @@ import Populararea from './sections/Populararea'
 function App() {
 
   return (
-    <>
+    <div className='overflow-hidden'>
     <DarkmodeProvider>
     <Header/>
     <Hero/>
@@ -22,7 +22,7 @@ function App() {
     <Clients/>
     <Footer/>
     </DarkmodeProvider>
-    </>
+    </div>
   )
 }
 

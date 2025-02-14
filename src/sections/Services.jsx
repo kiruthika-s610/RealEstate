@@ -17,8 +17,8 @@ const Services = () => {
     })
   }, [])
   return (
-    < div className={`${darkMode ? 'dark bg-black text-white' : 'light bg-transparent text-black'} pb-20`}>
-      <section id='services' className={`${darkMode ? 'dark bg-gray-800' : 'light bg-gray-100'} lg:w-[90%] w-full h-fit m-auto rounded-xl flex flex-col justify-center items-start px-6 py-20 gap-10`}>
+    < div className={`${darkMode ? ' bg-black text-white' : ' bg-transparent text-black'} pb-20`}>
+      <section id='services' className={`${darkMode ? ' bg-gray-800' : ' bg-gray-100'} lg:w-[90%] w-full h-fit m-auto rounded-xl flex flex-col justify-center items-start px-6 py-20 gap-10`}>
         <div className='flex flex-col justify-center items-start gap-4'>
           <h1 data-aos="zoom-in" className='text-red-500 text-xl'> SERVICES</h1>
           <h1 data-aos="slide-up" className=' leading-10 font-semibold text-[40px]  '>Our Best Services</h1>

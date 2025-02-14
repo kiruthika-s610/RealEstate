@@ -23,7 +23,7 @@ const Clients = () => {
 
   return (
     <div>
-      <div className={`${darkMode ? 'dark bg-gray-500 text-white ' : 'light bg-transparent text-black'}`}>
+      <div className={`${darkMode ? 'bg-gray-500 text-white ' : 'bg-transparent text-black'}`}>
         <section className='lg:w-[95%] w-full h-fit m-auto bg-cover bg-center rounded-xl flex flex-col items-start lg:p-20 p-2 gap-20'>
           <div className='flex flex-col justify-center items-start gap-4'>
             <h1 data-aos="zoom-in" className={` ${darkMode ? 'text-yellow-300' : 'text-red-500'}`}>OUR CLIENTS</h1>

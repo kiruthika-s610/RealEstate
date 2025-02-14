@@ -22,8 +22,8 @@ const Header = () => {
   ]
 
   return (
-    < nav className={`${darkMode ? 'dark bg-gray-700 text-stone-200 ' : 'light bg-stone-50 text-blue-400 '} flex justify-between lg:gap-4 gap-3 lg:px-20 px-3 py-4 sticky top-0 z-30`}>
-      <div id='logo' className=' dark:text-amber-100 lg:text-4xl text-2xl font-bold'>Uthira Realtors</div>
+    < nav className={`${darkMode ? 'bg-gray-700 text-stone-200 ' : 'bg-stone-50 text-blue-400 '} fixed flex justify-between w-full lg:gap-4 gap-3 lg:px-20 px-3 py-4  top-0 z-40`}>
+      <div id='logo' className='lg:text-4xl text-2xl font-bold'>Uthira Realtors</div>
       <ul className={`lg:flex hidden justify-center items-center gap-8 ${darkMode ? 'text-stone-100' : 'text-stone-600'} `}>
         {navItems.map(({ link, path }) => (
           <Link key={path} to={path} spy={true} offset={-100} smooth={true} className='text-[15px] uppercase font-semibold cursor-pointer px-3 py-2 rounded-lg hover:bg-red-400  '>
