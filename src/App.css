@@ -51,7 +51,7 @@ body {
 #hero{
   background-color:rgba(4, 201, 250, 0.26, 0.26);
   background-image: url('https://www.budgetmaldives.com/wp-content/uploads/2020/05/Ja-manafaru-sunrise-villa.jpg');
-  background-position:cover;
+  background-position:cover; 
 }
 
 .populararea1{
