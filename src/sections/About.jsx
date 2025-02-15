@@ -23,10 +23,9 @@ const About = () => {
       </div>
       <div className='flex flex-col justify-center items-start gap-8'>
         <h1 data-aos='zoom-in' className={`${darkMode ? 'text-yellow-200':'text-red-500'}`}>WHO WE ARE</h1>
-        <h1 data-aos='zoom-in' data-aos-delay="200" className={`${darkMode ? 'text-white':'text-black'} text-[40px] font-semibold leading-10 `}>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
-        <div data-aos='zoom-in' data-aos-delay="200" className={`text-xl text-justify ${darkMode ? 'text-white' : 'text-black'}`} >
-          Aliquid expedita iste neque, ullam suscipit molestias reiciendis unde error, facere sed sequi. Quibusdam natus voluptate quod in corporis amet labore ab?
-        </div>
+        <h1 data-aos='zoom-in' data-aos-delay="200" className={`${darkMode ? 'text-white':'text-black'} text-[40px] font-semibold leading-10 `}>Helping families find their dream homes since 1995. </h1>
+        <div data-aos='zoom-in' data-aos-delay="200" className={`text-[18px] font-serif text-justify ${darkMode ? 'text-white' : 'text-black'}`} >
+        We are helping clients to buy, sell, and invest in properties with confidence. With expert market knowledge, personalized service, and a passion for excellence, we make every transaction smooth and successful. Whether you’re searching for your dream home or looking to maximize your investment, we are here to guide you every step of the way.        </div>
         <button className='bg-red-700  hover:bg-red-600 transition-transform duration-300 text-white font-semibold rounded-xl p-3 cursor-pointer  hover:scale-110 transition-transform-duration-500'>Read more</button>
       </div>
     </section>
