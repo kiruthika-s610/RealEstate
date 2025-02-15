@@ -25,7 +25,7 @@ const Properties = () => {
       <section id='properties' className='m-auto lg:px-10 px-6 py-20 w-full flex flex-col items-start justify-center gap-10'>
         <div className='flex flex-col justify-center        items-start gap-4'>
           <h1 data-aos="zoom-in" className='text-red-500 text-xl'>PROPERTIES</h1>
-          <h1 data-aos="zoom-in" className='text-4xl font-semibold '>Explore the latest</h1>
+          <h1 data-aos="zoom-in" className='text-xl font-semibold '>Explore the latest</h1>
         </div>
         <div id='gridbox' className='grid w-full lg:grid-cols-3 grid-cols-1 justify-center items-center gap-10'>
           {

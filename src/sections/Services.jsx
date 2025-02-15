@@ -21,7 +21,7 @@ const Services = () => {
       <section id='services' className={`${darkMode ? ' bg-gray-800' : ' bg-gray-100'} lg:w-[90%] w-full h-fit m-auto rounded-xl flex flex-col justify-center items-start px-6 py-20 gap-10`}>
         <div className='flex flex-col justify-center items-start gap-4'>
           <h1 data-aos="zoom-in" className='text-red-500 text-xl'> SERVICES</h1>
-          <h1 data-aos="slide-up" className=' leading-10 font-semibold text-[40px]  '>Our Best Services</h1>
+          <h1 data-aos="slide-up" className=' leading-10 font-semibold text-[20px]  '>Our Best Services</h1>
         </div>
         <div id="sevice-box" className="grid lg:grid-cols-3 grid-cols-1 justify-center item-center gap-8">
           {

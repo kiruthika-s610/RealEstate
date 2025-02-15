@@ -27,7 +27,7 @@ const Clients = () => {
         <section className='lg:w-[95%] w-full h-fit m-auto bg-cover bg-center rounded-xl flex flex-col items-start lg:p-20 p-2 gap-20'>
           <div className='flex flex-col justify-center items-start gap-4'>
             <h1 data-aos="zoom-in" className={` ${darkMode ? 'text-yellow-300' : 'text-red-500'}`}>OUR CLIENTS</h1>
-            <h1 data-aos="slide-up" className=' text-[40px] font-semibold leading-12 justify-center'>Our clients saying about us</h1>
+            <h1 data-aos="slide-up" className=' text-[20px] font-semibold leading-12 justify-center'>Our clients saying about us</h1>
           </div>
           <div id='client-box' className='lg:w-[100%] w-fit justify-center items-center lg:flex hidden h-fit lg:p-10 p-0'>
             <Swiper
