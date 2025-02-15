@@ -27,6 +27,9 @@ const About = () => {
         <div data-aos='zoom-in' data-aos-delay="200" className={`text-[18px] font-serif text-justify ${darkMode ? 'text-white' : 'text-black'}`} >
         We are helping clients to buy, sell, and invest in properties with confidence. With expert market knowledge, personalized service, and a passion for excellence, we make every transaction smooth and successful. Whether you’re searching for your dream home or looking to maximize your investment, we are here to guide you every step of the way.        </div>
         <button className='bg-red-700  hover:bg-red-600 transition-transform duration-300 text-white font-semibold rounded-xl p-3 cursor-pointer  hover:scale-110 transition-transform-duration-500'>Read more</button>
+        {/* we are more than just a real estate company—we are your trusted partners in finding the perfect place to call home. With years of industry experience, deep market expertise, and a commitment to exceptional service, we help buyers, sellers, and investors navigate the ever-changing real estate landscape with ease.
+Our team is dedicated to understanding your unique needs and providing tailored solutions to match your goals. Whether you are looking for a dream home, selling a property, or seeking lucrative investment opportunities, we offer strategic insights, innovative marketing, and strong negotiation skills to ensure the best outcomes.
+Integrity, transparency, and client satisfaction are at the heart of everything we do. We believe real estate is more than just transactions—it’s about building lasting relationships and helping our clients achieve financial growth and personal happiness. */}
       </div>
     </section>
   )
