@@ -4,7 +4,7 @@ import { useDarkmode } from './DarkmodeContext'
 import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaBuilding } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 import { IoMdMail } from 'react-icons/io'
-
+import { FaWhatsapp } from 'react-icons/fa'
 
 const Footer = () => {
   const { darkMode, toggleDarkMode } = useDarkmode();
@@ -71,11 +71,16 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div id='icon-box' className='bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed  lg:bottom-12 bottom-6 right-6 '>
+      {/* <div id='icon-box' className='bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed  lg:bottom-12 bottom-6 right-6 '>
         <Link to='hero' spy={true} smooth={true}>
           <FaArrowUp className='text-white' />
         </Link>
+      </div> */}
+      <div id='icon-box' className='bg-green-500 p-4 rounded-full text-white hover:text-blue-300 cursor-pointer fixed text-3xl lg:bottom-12 bottom-6 right-6 '>
+        <a href="https://www.whatsapp.com/"><FaWhatsapp/></a>
       </div>
+
+
       <div>
         <button onClick={toggleDarkMode} className='flex item-center fixed p-4 rounded-full bg-orange-400 lg:top-52 right-6 top-26 '>
           {darkMode ? <FaMoon /> : <FaSun />}
